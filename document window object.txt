@@ -1,0 +1,37 @@
+Window							 	  Document
+1.It is the root level element in any web page	                  1.It is the direct child of the window object. This is also known as Document Object Model(DOM)
+2.By default window object is available implicitly in the page	  2.You can access it via window.document or document.
+3.It has methods like alert(), 
+confirm() and properties like document, location.	          3.It provides methods like getElementById, getElementsByTagName, createElement etc.
+
+
+
+
+
+In JavaScript, both the Document Object and the Window Object are important, but they serve different roles and have distinct properties and methods. Here are the key differences between the two:
+
+Window Object:
+
+Global Object: The Window Object represents the browser window or tab. It is the global object in JavaScript, encompassing the entire browsing context.
+
+Browser Window Control: It provides control over the browser window, allowing you to manipulate aspects such as navigation (changing the URL), resizing the window, opening new windows or tabs, and interacting with the browser's history.
+
+Timers: The Window Object offers methods for setting timers, including setTimeout and setInterval, which allow you to execute code at specific intervals.
+
+Global Variables and Functions: All global variables and functions in JavaScript are properties and methods of the Window Object. For example, variables declared with var without a specific scope become properties of the Window Object.
+
+Frames and Iframes: It manages frames and iframes within a web page, allowing you to access their content and manipulate them.
+
+Document Object:
+
+Content and Structure: The Document Object represents the content and structure of an HTML document within the browser window. It is part of the Window Object hierarchy.
+
+DOM Manipulation: It provides methods and properties for interacting with the structure and elements of the web page, allowing you to create, update, and delete elements, change content, and modify the page's structure.
+
+Event Handling: The Document Object is used to attach event listeners to elements on the page, enabling you to respond to user interactions like clicks, input, and form submissions.
+
+Element Access: You can use the Document Object to access and modify individual elements on the web page, such as headings, paragraphs, images, and forms.
+
+Hierarchy: The Document Object is nested within the Window Object. You can access it as window.document or simply as document.
+
+In summary, the Window Object is responsible for the browser window, including navigation and global functions, while the Document Object focuses on the content and structure of the web page, offering methods for interacting with the Document Object Model (DOM). 
